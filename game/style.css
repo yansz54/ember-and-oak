@@ -1,0 +1,31 @@
+/* Ember & Oak — page shell. The game itself is drawn on the canvas. */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #1d130c;
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+#game {
+  width: min(1280px, 100vw);
+  height: auto;
+  display: block;
+  background: #2b1d16;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #4a3421, 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+#fallback {
+  color: #a8906a;
+  font: 13px Arial, sans-serif;
+  margin: 0;
+}
